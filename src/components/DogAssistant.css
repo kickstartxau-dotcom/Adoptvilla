@@ -1,0 +1,36 @@
+/* Davo is intentionally namespaced so it cannot style or block unrelated page controls. */
+.davo-launcher{position:fixed;right:18px;bottom:16px;z-index:80;display:grid;grid-template-columns:minmax(0,290px) 112px;align-items:end;gap:8px;pointer-events:none;max-width:min(420px,calc(100vw - 24px))}
+.davo-launcher-copy{pointer-events:none;background:#fff;border:1px solid #eadfd3;border-radius:18px;padding:12px 15px;box-shadow:0 10px 28px rgba(52,34,24,.18);color:#4a3728;font-size:12px;line-height:1.35}
+.davo-launcher-copy b,.davo-launcher-copy span,.davo-launcher-copy em{display:block}.davo-launcher-copy b{font-size:13px;margin-bottom:3px}.davo-launcher-copy span{font-size:11px;font-weight:600;color:#6c5a50}.davo-launcher-copy em{margin-top:5px;color:#2b8e6d;font-style:normal;font-weight:800}
+.davo-launch-button{pointer-events:auto;border:0;background:transparent;cursor:pointer;width:112px;height:112px;padding:0;display:grid;place-items:end;overflow:visible}
+.davo-launch-button video{display:block;width:112px;height:112px;background:transparent;object-fit:contain;pointer-events:none}
+.davo-modal-overlay{position:fixed;inset:0;background:rgba(34,24,18,.32);z-index:100000;display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box}
+.davo-modal{width:min(460px,100%);max-height:calc(100dvh - 40px);overflow:auto;background:#fffaf2;border:1px solid #eadfd3;border-radius:26px;padding:30px;box-shadow:0 22px 70px rgba(0,0,0,.22);color:#4a3728;position:relative;box-sizing:border-box}
+.davo-eyebrow{display:block;font-size:10px;font-weight:850;letter-spacing:.14em;color:#9b7412;margin-bottom:9px}.davo-modal h2{margin:0 44px 8px 0;font-size:30px;line-height:1.1}.davo-intro{font-size:13px;line-height:1.5;margin:0 0 7px}.davo-helper{font-size:12px!important;line-height:1.55!important;color:#6c5a50;margin:0 0 18px!important}
+.davo-modal>input{width:100%;box-sizing:border-box;padding:13px 14px;margin:7px 0;border:1px solid #dccdbd;border-radius:12px;background:white;color:#4a3728}.davo-modal small{display:block;color:#b84a38;min-height:17px;font-size:10px}.davo-phone-box{display:flex;align-items:center;background:#fff;border:1px solid #dccdbd;border-radius:12px;padding-left:14px;margin:7px 0}.davo-phone-box span{font-size:12px}.davo-phone-box input{width:100%;border:0;outline:0;margin:0;padding:13px;background:transparent;color:#4a3728}.davo-agree{display:flex;gap:8px;align-items:center;margin:8px 0;font-size:11px!important}.davo-agree input{width:auto!important}.davo-continue{width:100%;min-height:46px;padding:0 16px;border:0;border-radius:12px;background:#2b8e6d;color:white;font-weight:800;cursor:pointer}.davo-close{position:absolute;right:16px;top:14px;width:36px;height:36px;border:1px solid #e5d9cc;background:#fff;border-radius:50%;font-size:21px;color:#4a3728;cursor:pointer}
+.davo-full-chat{position:fixed;inset:0;z-index:100001;width:100vw;height:100dvh;min-height:0;overflow:hidden;background:#fffaf2;color:#4a3728;display:flex;flex-direction:column}.davo-chat-header{width:100%;min-height:72px;box-sizing:border-box;padding:14px clamp(20px,7vw,110px);background:#4a3728;color:#fff;display:flex;align-items:center;justify-content:space-between}.davo-chat-header>div{display:flex;flex-direction:column;gap:3px}.davo-chat-header span{font-size:11px;color:#c9f0df}.davo-chat-header button{border:0;background:transparent;color:#fff;font-size:30px;cursor:pointer}.davo-welcome{width:min(1000px,100%);box-sizing:border-box;margin:0 auto;padding:25px 22px 15px;text-align:center}.davo-welcome h2{font-size:clamp(28px,4vw,44px);margin:0 0 8px}.davo-welcome p{font-size:14px;margin:0 0 16px}.davo-quick{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.davo-quick button{min-height:42px;padding:0 18px;border:1px solid #dccdbd;border-radius:999px;background:#fff;color:#4a3728;font-weight:700;cursor:pointer}.davo-messages{width:min(760px,100%);min-height:0;box-sizing:border-box;margin:0 auto;padding:12px 22px 22px;overflow-y:auto;flex:1}.davo-message{width:max-content;max-width:min(75%,560px);box-sizing:border-box;padding:11px 15px;margin:9px 0;border-radius:17px;line-height:1.5;overflow-wrap:anywhere}.davo-message.bot{background:#f0eee8}.davo-message.user{margin-left:auto;background:#2b8e6d;color:#fff}.davo-chat-footer{width:100%;box-sizing:border-box;display:flex;align-items:center;padding:16px clamp(20px,7vw,110px);gap:10px;background:#fff}.davo-chat-footer input{min-width:0;width:100%;height:48px;box-sizing:border-box;padding:0 17px;border:1px solid #dccdbd;border-radius:999px;background:#fff;color:#4a3728}.davo-chat-footer button{flex:0 0 48px;height:48px;padding:0;border:0;background:#2b8e6d;color:#fff;border-radius:50%;cursor:pointer}
+@media(max-width:760px){.davo-launcher{right:10px;bottom:10px;grid-template-columns:minmax(0,235px) 84px;max-width:calc(100vw - 20px)}.davo-launch-button,.davo-launch-button video{width:84px;height:84px}.davo-launcher-copy{padding:10px 12px}.davo-launcher-copy span{display:none}.davo-modal{padding:25px 20px}.davo-quick{flex-direction:column}.davo-quick button{width:100%}.davo-message{max-width:88%}}
+@media(max-width:430px){.davo-launcher{grid-template-columns:minmax(0,1fr) 76px}.davo-launch-button,.davo-launch-button video{width:76px;height:76px}.davo-launcher-copy{font-size:10px}.davo-launcher-copy b{font-size:11px}}
+.davo-launcher {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.davo-launcher-copy {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    position: relative;
+    z-index: 10001;
+}
+
+.davo-launch-button {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 10000;
+}
+
+.davo-launcher-copy em {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
